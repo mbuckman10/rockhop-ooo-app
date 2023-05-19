@@ -123,4 +123,4 @@ jobs:
         force-overwrite: true
         publish-changes: true
         use-deployment-settings-file: true
-        deployment-settings-file: ${{ inputs.solution_source_folder}}/Settings/${{ inputs.solution_name }}.json
+        deployment-settings-file: ${{ inputs.solution_release_folder}}/Settings/${{ inputs.solution_name }}.json
