@@ -1,0 +1,22 @@
+name: Release action
+# Call the reusable workflow release-solution-with-inputs.yml
+# Release your solution to prod when you create a new release.
+
+on:
+  release:
+      types: [created]        
+permissions:
+  contents: write
+jobs:
+  Release-solution-ALMLab:
+    uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
+    with:
+      #You can specify the solution name here
+      solution_name: RockhopOutOfOffice
+      #Update your values here
+      BUILD_ENVIRONMENT_URL: https://rockhop-dev.crm.dynamics.com
+      PRODUCTION_ENVIRONMENT_URL: https://rockhop-prod.crm.dynamics.com
+      CLIENT_ID: 4c200d64-84df-4173-8971-777d3b5193df
+      TENANT_ID: bf59fe7f-17f4-4538-8014-69eff1fdadc8      
+    secrets:
+      envSecret: ${{ secrets.PowerPlatformSPN }}
