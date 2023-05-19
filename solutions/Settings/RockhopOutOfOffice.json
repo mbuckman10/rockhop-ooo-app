@@ -1,0 +1,9 @@
+{
+  "EnvironmentVariables": [
+    {
+      "SchemaName": "rockhop_EnvironmentUrl",
+      "Value": "https://rockhop-prod.crm.dynamics.com"
+    }
+  ],
+  "ConnectionReferences": []
+}
