@@ -40,6 +40,10 @@ on:
         description: 'The client id'
         type: string
         required: true
+      CLIENT_ID_PROD: 
+        description: 'The client id for prod'
+        type: string
+        required: true
       TENANT_ID: 
         description: 'The tenant id'
         type: string
@@ -47,6 +51,9 @@ on:
     secrets:
       envSecret:
         description: 'The secret value for authentication using SPN'
+        required: true
+      envSecretProd:
+        description: 'The secret value for authentication using SPN for Prod'
         required: true
 
 jobs:
@@ -116,8 +123,8 @@ jobs:
       uses: microsoft/powerplatform-actions/import-solution@v0
       with:
         environment-url: ${{inputs.PRODUCTION_ENVIRONMENT_URL}}
-        app-id: ${{inputs.CLIENT_ID}}
-        client-secret: ${{ secrets.envSecret }}
+        app-id: ${{inputs.CLIENT_ID_PROD}}
+        client-secret: ${{ secrets.envSecretProd }}
         tenant-id: ${{inputs.TENANT_ID}}
         solution-file: ${{ inputs.solution_release_folder}}/${{ inputs.solution_name }}_managed.zip
         force-overwrite: true
