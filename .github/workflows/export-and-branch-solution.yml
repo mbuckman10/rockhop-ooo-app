@@ -47,7 +47,7 @@ jobs:
       with:
         environment-url: ${{env.ENVIRONMENT_URL}}
         app-id: ${{env.CLIENT_ID}}
-        client-secret: ${{ secrets.PowerPlatformSPN }}
+        client-secret: ${{ secrets.PowerPlatformSPNDev }}
         tenant-id: ${{env.TENANT_ID}}
 
 
