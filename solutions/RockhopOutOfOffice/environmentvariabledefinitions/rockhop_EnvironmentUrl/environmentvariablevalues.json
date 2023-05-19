@@ -1,0 +1,9 @@
+{
+  "environmentvariablevalues": {
+    "environmentvariablevalue": {
+      "@environmentvariablevalueid": "d9168c6f-90f5-ed11-8848-00224827235f",
+      "iscustomizable": "1",
+      "value": "https://rockhop-dev.crm.dynamics.com"
+    }
+  }
+}
