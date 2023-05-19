@@ -17,6 +17,7 @@ jobs:
       BUILD_ENVIRONMENT_URL: https://rockhop-dev.crm.dynamics.com
       PRODUCTION_ENVIRONMENT_URL: https://rockhop-prod.crm.dynamics.com
       CLIENT_ID: 4c200d64-84df-4173-8971-777d3b5193df
+      CLIENT_ID_PROD: 2ce8a530-7809-49f7-a6da-446e04d93a91
       TENANT_ID: bf59fe7f-17f4-4538-8014-69eff1fdadc8      
     secrets:
       envSecret: ${{ secrets.PowerPlatformSPN }}
