@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_rockhop_outofofficesubmission" />
+  <EntityRelationship Name="lk_rockhop_outofofficesubmission_createdby" />
+  <EntityRelationship Name="lk_rockhop_outofofficesubmission_modifiedby" />
+  <EntityRelationship Name="owner_rockhop_outofofficesubmission" />
+  <EntityRelationship Name="team_rockhop_outofofficesubmission" />
+  <EntityRelationship Name="user_rockhop_outofofficesubmission" />
+</EntityRelationships>
