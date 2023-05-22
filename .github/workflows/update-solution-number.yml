@@ -1,0 +1,42 @@
+name: update-solution-number
+
+on:
+  workflow_dispatch:
+    inputs:
+      # Change this value
+      solution_name:
+        description: 'name of the solution to worked on from Power Platform'
+        required: true
+        default: RockhopOutOfOffice
+      solution_target_folder: 
+       description: 'folder name to be created and checked in *do not change*'
+       required: true
+       default: solutions/
+env:
+#edit your values here
+  ENVIRONMENT_URL: 'https://rockhop-dev.crm.dynamics.com'
+  CLIENT_ID: '4c200d64-84df-4173-8971-777d3b5193df'
+  TENANT_ID: 'bf59fe7f-17f4-4538-8014-69eff1fdadc8'
+permissions:
+  contents: write
+defaults:
+  run:
+    working-directory: ${{ inputs.solution_target_folder}}/${{ inputs.solution_name }}/Other
+  
+jobs:
+  update-solution-nnumber:
+     runs-on: windows-latest
+      # or you can say runs-on: ubuntu-latest
+     env:
+        RUNNER_DEBUG: 1
+     steps:
+       # Currently requires you have the working direcotry set to the correct path...
+      - name: Update solution version
+        uses: microsoft/powerplatform-actions/update-solution-version@latest
+        with: 
+          strategy: solution
+          environment-url: ${{inputs.BUILD_ENVIRONMENT_URL}}
+          app-id: ${{inputs.CLIENT_ID}}
+          client-secret: ${{ secrets.envSecret }} 
+          tenant-id: ${{inputs.TENANT_ID}}
+          solution-name: ${{ inputs.solution_name }}
