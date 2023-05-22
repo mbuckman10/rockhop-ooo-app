@@ -21,7 +21,7 @@ permissions:
   contents: write
 defaults:
   run:
-    working-directory: ${{ inputs.solution_target_folder}}/${{ inputs.solution_name }}/Other
+    working-directory: solutions/RockhopOutOfOffice/Other
   
 jobs:
   update-solution-nnumber:
