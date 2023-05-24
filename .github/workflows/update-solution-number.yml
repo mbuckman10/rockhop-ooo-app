@@ -56,8 +56,6 @@ jobs:
         uses: microsoft/powerplatform-actions/update-solution-version@latest
         with: 
           strategy: solution
-          environment-url: ${{inputs.BUILD_ENVIRONMENT_URL}}
-          app-id: ${{inputs.CLIENT_ID}}
-          client-secret: ${{ secrets.envSecret }} 
-          tenant-id: ${{inputs.TENANT_ID}}
-          solution-name: ${{ inputs.solution_name }}
+          app-id: ${{env.CLIENT_ID}}
+          client-secret: ${{ secrets.PowerPlatformSPN }}
+          tenant-id: ${{env.TENANT_ID}}
