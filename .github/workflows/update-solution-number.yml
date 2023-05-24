@@ -24,7 +24,7 @@ defaults:
     working-directory: solutions/RockhopOutOfOffice/Other
   
 jobs:
-  update-solution-nnumber:
+  update-solution-number:
      runs-on: windows-latest
       # or you can say runs-on: ubuntu-latest
      env:
