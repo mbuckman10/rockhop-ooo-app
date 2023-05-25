@@ -28,9 +28,9 @@ env:
   TENANT_ID: 'bf59fe7f-17f4-4538-8014-69eff1fdadc8'
 permissions:
   contents: write
-# defaults:
-#   run:
-#     working-directory: solutions/RockhopOutOfOffice/Other
+defaults:
+  run:
+    working-directory: solutions/RockhopOutOfOffice/Other
   
 jobs:
   update-solution-number:
