@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>rockhop_rockhopoutofoffice_7e48c</Name>
-  <AppVersion>2023-05-25T19:33:27Z</AppVersion>
+  <AppVersion>2023-06-02T21:36:18Z</AppVersion>
   <Status>Ready</Status>
-  <CreatedByClientVersion>3.23051.23.0</CreatedByClientVersion>
-  <MinClientVersion>3.23051.23.0</MinClientVersion>
-  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.23051.23","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20230522T024932Z-3.23051.23.0"}</Tags>
+  <CreatedByClientVersion>3.23052.29.0</CreatedByClientVersion>
+  <MinClientVersion>3.23052.29.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.23052.29","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false","sienaVersion":"20230530T224611Z-3.23051.23.0"}</Tags>
   <IsCdsUpgraded>0</IsCdsUpgraded>
   <GalleryItemId xsi:nil="true"></GalleryItemId>
   <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
